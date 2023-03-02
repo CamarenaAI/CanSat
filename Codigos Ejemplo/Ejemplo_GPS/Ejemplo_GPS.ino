@@ -1,21 +1,21 @@
-#include <TinyGPS++.h>
-#include <SoftwareSerial.h>
+#include <TinyGPS++.h>          // Incluimos la libreria del GPS
+#include <SoftwareSerial.h>     // Incluimos la libreria para el puerto serial
 
-const int RX1 = 3, TX1 = 4;
-SoftwareSerial vke16(RX1, TX1); // RX=pin 19, TX=pin 18
+const int RX1 = 3, TX1 = 4;     // Definimos los pines que funcionaran como puerto serial
+SoftwareSerial vke16(RX1, TX1); // RX=pin 3, TX=pin 4
 TinyGPSPlus gps;                // azul       verde
 
 void setup() {
   Serial.begin(9600);
-  vke16.begin(9600); // Esto abre las comunicaciones con el GPS.
+  vke16.begin(9600);            // Esto abre las comunicaciones con el GPS.
 
   Serial.println("Conectando");
 }
 
 void loop() {
-  while (vke16.available()) // Si bien hay caracteres que vienen del GPS
+  while (vke16.available())     // Si bien hay caracteres que vienen del GPS
   {
-    gps.encode(vke16.read());// Esto alimenta los datos seriales NMEA en la biblioteca un carácter a la vez
+    gps.encode(vke16.read());   // Esto alimenta los datos seriales NMEA en la biblioteca un carácter a la vez
   }
   if (gps.location.isUpdated()) // De todos modos, esto se activará casi todo el tiempo, pero al menos lo reducirá solo después de que ingrese un paquete de datos NMEA
   {
@@ -34,7 +34,7 @@ void loop() {
     Serial.print(gps.altitude.meters());
     Serial.println("");
 
-//  Serial.println(" ");
-//  delay(1000);
+    //  Serial.println(" ");
+    //  delay(1000);
   }
 }
