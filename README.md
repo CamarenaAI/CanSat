@@ -1,19 +1,26 @@
-<h1>CanSat</h1>
+# 📡 CanSat - Mini Satellite in a Can
 
-<p>
-Un CanSat es un pequeño satélite en miniatura que tiene el tamaño y la forma de una lata de refresco ("Can" en inglés) y que se lanza al espacio como carga útil de un cohete<br>
-Su objetivo principal es realizar experimentos científicos o tecnológicos en el espacio<br
-</p>
+A CanSat is a miniature satellite with the size and shape of a soda can ("Can" in English). It is used to conduct scientific and technological experiments in the atmosphere or space.
 
-<h2>Suelen contener:</h2>
+Once launched from a rocket or drone, the CanSat deploys and begins transmitting data and measurements to Earth via radios and other communication systems.
 
-<ul>
-    <li>Sensores</li>
-    <li>Dispositivos de medición</li>
-    <li>Sistemas de comunicación</li>
-    <li>Otros equipos necesarios para llevar a cabo el experimento previsto </li>
-</ul>
+## 🛰 CanSat Components
 
-<p>
-Una vez que se lanza al espacio, el CanSat se despliega desde el cohete y comienza a enviar datos y mediciones a la Tierra a través de radios y otros sistemas de comunicación
-</p>
+A CanSat typically includes the following essential components:
+
+- 🔬 Sensors (pressure, temperature, humidity, acceleration, GPS)
+- 📊 Measurement devices to collect environmental data
+- 📡 Communication systems to transmit real-time telemetry
+- ⚙️ Other electronic equipment depending on the experiment design
+
+
+## 🔌 Arduino Libraries Used
+
+This project utilizes the following Arduino libraries to interface with the sensors:
+
+| 📚 Library  | 📌 Description                                     | 🧑‍💻 Author     |
+| ----------- | --------------------------------------------------- | --------------- |
+| BMP280_DEV  | Controls the BMP280 pressure and temperature sensor | Martin Lindupp  |
+| TinyGPSPlus | Processes GPS data from the VK16E module            | Mikal Hart      |
+| DTH22       | Controls the DTH22 Humidity and temparature sensor  | Adafruit        |
+| INA129      | Measure battery voltage and current consumption     | Adafruit        |
