@@ -62,7 +62,7 @@ This project utilizes the following Arduino libraries to interface with the sens
 <p align=center><em>Image 3. Select ports to found XBee modules</em></p>
 
 <p align="center">
-  <img src="/images/xbee_port_parametes.png" alt="select_port_parameters" />
+  <img src="/images/xbee_port_parameters.png" alt="select_port_parameters" />
 </p>
 <p align=center><em>Image 4. Select port parameters</em></p>
 
