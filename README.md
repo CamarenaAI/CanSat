@@ -150,7 +150,7 @@ Click **Write** to save.
 If you can send and receive messages both ways, your XBee network is configured correctly.
 
 <p align="center">
-  <img src="/images/module_configuration.png" alt="module_configuration" />
+  <img src="/images/data_test.png" alt="data_test" />
 </p>
 <p align=center><em>Image 8. Data Test</em></p>
 
